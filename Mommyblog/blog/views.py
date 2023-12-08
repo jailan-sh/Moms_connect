@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 
@@ -20,7 +20,12 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     """class to present every post alone"""
     model = Post
-    
+
+class PostCreateView(CreateView):
+    """class to create post"""
+    model = Post
+    fields = ['title', 'content']
+
 
 def about(request):
     """about page for blog"""
