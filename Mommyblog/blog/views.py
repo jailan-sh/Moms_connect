@@ -50,6 +50,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """class to delete post"""
     model = Post
+    success_url = '/'
 
     def test_func(self):
         """to allow only owner of post change it """
