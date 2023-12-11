@@ -69,12 +69,13 @@
               <h3><b>Moms_connect</b></h3>
               <p class='text-muted'>embracing the adventure of motherhood together!.
                 <ul class="list-group">
-                  <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
                   {% if user.is_authenticated %}
+                  <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-profile' %}"><b>profile</b></a></li>
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'blog-post-create' %}"><b>New Post</b></a></li>
                   {% else %}
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Be a member</b></a></li>
+                  <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
                   {% endif %}
                 </ul>
               </p>
