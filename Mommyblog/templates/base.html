@@ -40,7 +40,8 @@
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
             {% if user.is_authenticated %}
-            <a class="nav-item nav-link" href="{% url 'logout' %}"><b>Logout</b></a>
+            <a class="nav-item nav-link" href="{% url 'users-profile' %}"><b>profile</b></a>
+            <a class="nav-item nav-link" href="{% url 'logout' %}"><b>Sign out</b></a>
             {% else %}
             <a class="nav-item nav-link" href="{% url 'login' %}"><b>Sign In</b></a>
             <a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Sign Up</b></a>
@@ -70,7 +71,7 @@
                 <ul class="list-group">
                   {% if user.is_authenticated %}
                   <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
-                  <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-profile' %}"><b>profile</b></a></li>
+                  <li class="list-group-item list-group-item-light"></li>
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'blog-post-create' %}"><b>New Post</b></a></li>
                   {% else %}
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Be a member</b></a></li>
