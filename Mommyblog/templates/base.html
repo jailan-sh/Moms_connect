@@ -71,7 +71,6 @@
                 <ul class="list-group">
                   {% if user.is_authenticated %}
                   <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
-                  <li class="list-group-item list-group-item-light"></li>
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'blog-post-create' %}"><b>New Post</b></a></li>
                   {% else %}
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Be a member</b></a></li>
