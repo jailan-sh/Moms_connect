@@ -18,7 +18,7 @@ The primary goal of New Moms Connect is to create a space where new mothers can 
 - [Jailan Elsherbiny]: Co-founder responsible for project management, content creation, and community engagement.
 - [Ghaidaa alsahafy]: Co-founder choosing framworks to build app with and contributing to various aspects of the project's development.
 
-### to clone the repo:
+### requirement:
 - you need  [requirements.txt](./requirements.txt)
 
 ### Timeline
