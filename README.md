@@ -8,27 +8,25 @@ Welcome to Moms_Connect, a blogging haven for mothers.
 Moms_Connect is a blog to create a space where new mothers can connect, support one another, and share their journey through motherhood.
 
 # Audience
-
 New Moms Connect is tailored for:
 - Expectant Mothers
 - New Mothers
 - Experienced Mothers
 
 # Aim
-
 Our focus in developing New Moms Connect was on:
 1. User Experience: Ensuring an intuitive and user-friendly design accessible on both web and mobile platforms.
 2. Community Building: Fostering a sense of belonging and shared experience among users.
 
-### Project Overview
+# Project Overview
 
 ## Team Members and Roles
 
-- [Jailan Elsherbiny]: Co-founder responsible for project management, content creation, and community engagement.
-- [Ghaidaa alsahafy]: Co-founder choosing framworks to build app with and contributing to various aspects of the project's development.
+- [Jailan Elsherbiny]: Co-founder responsible for project management, and content creation, contributing to various project development aspects.
+- [Ghaidaa alsahafy]: Co-founder choosing a framework to build the app with and contributing to various project development aspects.
 
 ## Technical Overview
-For the frontend, we opted for a clean design using HTML, CSS Bootstrap, and js. The backend leverages Django for its robust features and simplicity. Our technology choices aimed to focus on fundamentals and understanding, rather than relying on extensive frameworks.
+We opted for a clean design for the front-end using HTML, CSS Bootstrap, and js. The backend leverages Django for its robust features and simplicity. Our technology choices focused on fundamentals and understanding, rather than relying on extensive frameworks.
 
 ## requirement:
  [requirements.txt](./requirements.txt)
