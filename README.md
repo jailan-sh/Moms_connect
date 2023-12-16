@@ -9,7 +9,6 @@ Moms_Connect is a blog to create a space where new mothers can connect, support 
 
 # Audience
 New Moms Connect is tailored for:
-- Expectant Mothers
 - New Mothers
 - Experienced Mothers
 
