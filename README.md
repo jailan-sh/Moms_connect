@@ -8,14 +8,12 @@ Welcome to Moms_Connect, a blogging haven for mothers.
 Moms_Connect is a blog to create a space where new mothers can connect, support one another, and share their journey through motherhood.
 
 # Audience
-
 New Moms Connect is tailored for:
 - Expectant Mothers
 - New Mothers
 - Experienced Mothers
 
 # Personal Focus
-
 Our focus in developing New Moms Connect was on:
 1. User Experience: Ensuring an intuitive and user-friendly design accessible on both web and mobile platforms.
 2. Community Building: Fostering a sense of belonging and shared experience among users.
