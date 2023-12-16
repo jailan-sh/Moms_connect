@@ -15,12 +15,15 @@ The primary goal of New Moms Connect is to create a space where new mothers can 
 
 ### Team Members and Roles
 
-- [Jailan alsherbiny]: Co-founder responsible for project management, content creation, and community engagement.
-- [Ghaidaa alsahafy]: Co-founder contributing to various aspects of the project's development.
+- [Jailan Elsherbiny]: Co-founder responsible for project management, content creation, and community engagement.
+- [Ghaidaa alsahafy]: Co-founder choosing framworks to build app with and contributing to various aspects of the project's development.
+
+### requirement:
+- you need  [requirements.txt](./requirements.txt)
 
 ### Timeline
 
-New Moms Connect officially launched in [Month Year]. Our journey continues to evolve as we grow our community of mothers.
+New Moms Connect officially launched in [DEC 2023]. Our journey continues to evolve as we grow our community of mothers.
 
 ### Project Audience
 
@@ -30,7 +33,7 @@ New Moms Connect is tailored for:
 - Experienced Mothers
 
 ### Technical Overview
-For the frontend, we opted for a clean design using HTML and CSS. The backend leverages Django for its robust features and simplicity. Our technology choices aimed to focus on fundamentals and understanding, rather than relying on extensive frameworks.
+For the frontend, we opted for a clean design using HTML, CSS Bootstrap, and js. The backend leverages Django for its robust features and simplicity. Our technology choices aimed to focus on fundamentals and understanding, rather than relying on extensive frameworks.
 
 ### Personal Focus
 

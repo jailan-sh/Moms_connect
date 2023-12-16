@@ -10,45 +10,64 @@
 
     <link rel="stylesheet"  href="{% static 'css/main.css' %}">
 
-    {% if title %}
-        <title>Moms_Connect Blog-{{ title }} </title>
-    {% else %}
+      <title>Moms_Connect</title>
       <style>
         body {
             background-image: url("https://img.pikbest.com/backgrounds/20220119/mother-baby-gynecology-woman-pink_6245648.jpg!sw800");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-      </style>
-      <title>Moms_Connect</title>
-    {% endif %}
+
+        header {
+            background-color: #DE20AB;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+
+      .container {
+          max-width: 1200px;
+          margin: 20px auto;
+      }
+        
+        
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-      <div class="container">
-        <a class="navbar-brand mr-4" href="{% url 'blog-home' %}"><b>Moms_Connect</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggle">
-          <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{% url 'blog-home' %}"><b>Home</b></a>
-            <a class="nav-item nav-link" href="{% url 'blog-about' %}"><b>About</b></a>
-          </div>
-          <!-- Navbar Right Side -->
-          <div class="navbar-nav">
-            {% if user.is_authenticated %}
-            <a class="nav-item nav-link" href="{% url 'users-profile' %}"><b>profile</b></a>
-            <a class="nav-item nav-link" href="{% url 'logout' %}"><b>Sign out</b></a>
-            {% else %}
-            <a class="nav-item nav-link" href="{% url 'login' %}"><b>Sign In</b></a>
-            <a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Sign Up</b></a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
+    <header>
+        <nav>
+            <a href="{% url 'blog-home' %}"><b>Moms_Connect</b></a>
+            <div>
+                <a href="{% url 'blog-home' %}"><b>Home</b></a>
+                <a href="{% url 'blog-about' %}"><b>About</b></a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'users-profile' %}"><b>Profile</b></a>
+                    <a href="{% url 'logout' %}"><b>Sign out</b></a>
+                {% else %}
+                    <a href="{% url 'login' %}"><b>Sign In</b></a>
+                    <a href="{% url 'users-register' %}"><b>Sign Up</b></a>
+                {% endif %}
+            </div>
+        </nav>
     </nav>
   </header>
     <main role="main" class="container">
@@ -71,7 +90,6 @@
                 <ul class="list-group">
                   {% if user.is_authenticated %}
                   <li class="list-group-item list-group-item-light" id="currentDateTime">Calendars</li>
-                  <li class="list-group-item list-group-item-light"></li>
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'blog-post-create' %}"><b>New Post</b></a></li>
                   {% else %}
                   <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{% url 'users-register' %}"><b>Be a member</b></a></li>
