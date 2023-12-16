@@ -62,4 +62,4 @@ To install and run Moms_connect locally, follow these steps:
 
 ## Explore Moms_Connect
 
-Visit our [Blog] (https://momsconnect.pythonanywhere.com/)https://momsconnect.pythonanywhere.com)
+Visit our [Blog](https://momsconnect.pythonanywhere.com/)
